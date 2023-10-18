@@ -1,0 +1,61 @@
+@import "../../App.scss";
+@import "../../mediaQueries.scss";
+.fae--contact-us-page-main-container {
+  @include flex(center, center);
+  background-color: #f4f4f4;
+}
+
+.fae--contact-us-page-wrapper {
+  width: 60%;
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 22px;
+}
+
+.fae--contact-us-page-helping-buttons {
+  @include flex(space-evenly, center);
+  width: 100%;
+}
+
+.fae--contact-us-page-helping-button {
+  @include flex(center, center);
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fae--contact-us-page-address-info {
+  @include flex(center, center);
+  flex-direction: column;
+}
+
+.fae--contact-us-page-form {
+  @include flex(center, center);
+  width: 75%;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.fae--contact-us-page-form-button {
+  border-radius: 5px;
+  height: 31px;
+}
+
+@include tablet {
+  .fae--contact-us-page-wrapper {
+    width: 80%;
+  }
+  .fae--contact-us-page-form {
+    width: 80%;
+  }
+}
+
+@include mobile {
+  .fae--contact-us-page-wrapper {
+    width: 95%;
+  }
+  .fae--contact-us-page-form {
+    width: 95%;
+  }
+}
